@@ -24,7 +24,7 @@ cardList.insertAdjacentHTML('afterbegin', galleryList);
 cardList.addEventListener('click', onCardListClick)
 function onCardListClick(event) {
     event.preventDefault();
-    if (event.taget === event.currentTarget) return;
+    if (event.target === event.currentTarget) return;
     const instance = basicLightbox.create(
         `<img src='${event.target.dataset.source}'  width="750" heigth="550">`,
         {
